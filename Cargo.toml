@@ -1,0 +1,19 @@
+[package]
+name = "reeses"
+version = "0.1.0"
+authors = ["tomerh <hacohen0tomer@gmail.com>"]
+edition = "2018"
+
+[lib]
+name = "reeses"
+path = "src/lib.rs"
+
+[[bin]]
+name = "pieces"
+path = "src/bin.rs"
+
+[dependencies]
+reqwest = "0.10.6"
+futures = "0.3"
+tokio = {version = "0.2", features = ["full"]}
+quick-xml = "0.18.1"
